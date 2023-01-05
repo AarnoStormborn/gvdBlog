@@ -1,13 +1,14 @@
 from django.db import models
 from django.urls import reverse
 from django.utils.text import slugify
+from tinymce.models import HTMLField
 
 
 class BlogPost(models.Model):
     title = models.CharField(max_length=200)
     subtitle = models.CharField(max_length=200, null=True)
     # author: is author needed?
-    content = models.TextField()
+    content = HTMLField()
     image = models.ImageField(upload_to='post/')
     slug = models.SlugField(default='', null=False, editable=False, max_length=200)
     publish_date = models.DateField(auto_now_add=True)
