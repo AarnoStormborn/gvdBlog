@@ -1,7 +1,13 @@
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 from . import views
 
 urlpatterns = [
     # blogs/
-    path("home/", views.index, name='index')
+    path("", views.index, name='index'),
+    path("blogs/", views.blogList, name='blogList'),
+    path("blog/<str:slug>-<int:pk>", views.blogDetail, name='blogDetail')
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
