@@ -1,8 +1,13 @@
 {% extends 'common/base.html' %}
 {% load widget_tweaks %}
 
+{% block meta %}
+<meta name="description" content="{{ blog.meta_description }}">
+<meta name="keywords" content="{{ blog.meta_keywords }}">
+{% endblock %}
+
 {% block title %}
-    <title>Blogs</title>
+    <title>{{ blog.title }}</title>
 {% endblock %}
 
 {% block body %}

@@ -31,8 +31,8 @@ MY_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
-    'tinymce',
-    'widget_tweaks'
+    'widget_tweaks',
+    'ckeditor'
 ]
 
 INSTALLED_APPS = DEFAULT_APPS + MY_APPS + THIRD_PARTY_APPS
