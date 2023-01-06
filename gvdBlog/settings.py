@@ -30,7 +30,10 @@ MY_APPS = [
     "blog.apps.BlogConfig",
 ]
 
-THIRD_PARTY_APPS = ['tinymce']
+THIRD_PARTY_APPS = [
+    'tinymce',
+    'widget_tweaks'
+]
 
 INSTALLED_APPS = DEFAULT_APPS + MY_APPS + THIRD_PARTY_APPS
 
