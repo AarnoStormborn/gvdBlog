@@ -32,7 +32,7 @@ MY_APPS = [
 
 THIRD_PARTY_APPS = [
     'widget_tweaks',
-    'ckeditor'
+    'ckeditor',
 ]
 
 INSTALLED_APPS = DEFAULT_APPS + MY_APPS + THIRD_PARTY_APPS
