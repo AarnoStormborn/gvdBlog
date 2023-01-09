@@ -26,6 +26,8 @@
             </div>
         </div>
     </header>
+
+    {# Blog #}
     <article>
         <div class="container">
             <div class="row">
@@ -33,12 +35,14 @@
                     <h1>{{ blog.title }}</h1><br>
                     {{ blog.content | safe }}
                 </div>
-            </div>
+            </div><hr>
         </div>
-    </article>
-    <br>
+    </article><br>
+
     <div class="container">
         <div class="row">
+
+            {# Comment Form #}
             <div class="col-md-10 col-lg-5 mx-auto">
                 <form method="post">
                     {% csrf_token %}
@@ -53,6 +57,8 @@
                   <button type="submit" class="btn btn-primary btn-sm">Submit</button>
                 </form>
             </div>
+
+            {# Blog Comments #}
             <div class="col-md-10 col-lg-8 mx-auto" style="margin-top: 50px;">
                 {% for comment in comments %}
                 <div class="card">

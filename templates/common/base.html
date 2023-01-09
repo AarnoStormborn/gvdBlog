@@ -25,8 +25,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'blogList' %}">Blogs</a></li>
-{#                    <li class="nav-item"><a class="nav-link" href="blogList.html">Contact us</a></li>#}
-{#                    <li class="nav-item"><a class="nav-link" href="blogPost.html">Blog Post</a></li>#}
+                    {# <li class="nav-item" id="translation"></li> #}
                 </ul>
             </div>
         </div>
@@ -48,8 +47,15 @@
             </div>
         </div>
     </footer>
+
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'bootstrap/js/clean-blog.js' %}"></script>
+{#    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>#}
+{#    <script>#}
+{#        document.addEventListener("DOMContentLoaded", function loadGoogleTranslate () {#}
+{#            new google.translate.TranslateElement({pageLanguage: 'en'}, "translation");#}
+{#        })#}
+{#    </script>#}
 </body>
 
 </html>
